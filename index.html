@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<h1>Bài tập 1: Tính tiền lương nhân viên</h1>
+<div class="card w-50 m-auto">
+    <div class="card-header bg-danger text-center text-white">
+        <h3>Tính tiền lương nhân viên</h3>
+    </div>
+    <div class="card-body">
+        <p>Lương nhân viên 1 ngày</p>
+        <input id="luongNhanVien" class="form-control">
+
+        <p>Số ngày làm</p>
+        <input id="soNgayLam" class="form-control">
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-success" onclick="tinhLuong()">Tính tiền</button>
+        <div class="display-4">
+            <span id="tongTienLuongNhanVien"></span>
+        </div>
+    </div>
+</div>
+<hr>
+<h1>Bài tập 2: Tính giá trị trung bình</h1>
+<div class="card w-50 m-auto">
+    <div class="card-header bg-danger text-center text-white">
+        <h3>Tính giá trị trung bình</h3>
+    </div>
+    <div class="card-body">
+        <p>Giá trị a</p>
+        <input id="soThucA" class="form-control">
+
+        <p>Giá trị b</p>
+        <input id="soThucB" class="form-control">
+
+        <p>Giá trị c</p>
+        <input id="soThucC" class="form-control">
+
+        <p>Giá trị d</p>
+        <input id="soThucD" class="form-control">
+
+        <p>Giá trị e</p>
+        <input id="soThucE" class="form-control">
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-success" onclick="trungBinh()">Giá trị trung bình</button>
+        <div class="display-4">
+            <span id="giaTriTrungBinh"></span>
+        </div>
+    </div>
+</div>
+<hr>
+<h1>Bài tập 3: Quy đổi tiền</h1>
+<div class="card w-50 m-auto">
+    <div class="card-header bg-danger text-center text-white">
+        <h3>Quy đổi tiền</h3>
+    </div>
+    <div class="card-body">
+        <p>Giá tiền USD</p>
+        <input id="usdPrice" class="form-control">
+
+        <p>Tỉ Giá</p>
+        <input id="tiGia" class="form-control">
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-success" onclick="chuyenDoiTien()">Tính tiền</button>
+        <div class="display-4">
+            <span id="vndPrice"></span>VND
+        </div>
+    </div>
+</div>
+<hr>
+<h1>Bài tập 4: Tính chu vi , diện tích HCN</h1>
+<div class="card w-50 m-auto">
+    <div class="card-header bg-danger text-center text-white">
+        <h3>Hình chữ nhật</h3>
+    </div>
+    <div class="card-body">
+        <p>Chiều dài</p>
+        <input id="chieuDai" class="form-control">
+
+        <p>Chiều Rộng</p>
+        <input id="chieuRong" class="form-control">
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-success" onclick="congThuc()">Kết Quả</button>
+        <div class="display-4">
+            <span id="ketQuaChuVi"></span>CM
+            <br>
+            <span id="ketQuaDienTich"></span>CM
+        </div>
+    </div>
+</div>
+<hr>
+<div class="form-group container">
+    <h3>Bài Tập 5: Tính tổng 2 ký số</h3>
+    <div class="form-group">
+        <p>Nhập 1 số có 2 chữ số</p>
+        <input type="number" placeholder="VD : 12 , 22 , 45 , 70 ..." id="soCanNhap" />
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success my-3" id="btn-tinhTong" onclick="tinhTong2KySo()">
+            Tổng 2 ký số
+        </button>
+        <div class="alert alert-success">
+            Kết quả : <span id="tong2KySo"></span>
+        </div>
+    </div>
+</div>
+
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
